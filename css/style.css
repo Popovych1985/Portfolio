@@ -1,0 +1,153 @@
+@font-face
+{
+font-family: "Brandon";
+src: url('../fonts/Brandon_Grotesque/Brandon_bld.otf');
+	font-weight: bold;
+}
+
+@font-face
+{
+font-family: "Brandon";
+src: url('../fonts/Brandon_Grotesque/Brandon_light.otf');
+	font-weight: lighter;
+}
+
+@font-face
+{
+font-family: "Brandon";
+src: url('../fonts/Brandon_Grotesque/Brandon_med.otf');
+	font-weight: normal;
+}
+
+body {
+font-family: "Brandon", Helvetica, Arial, sans-serif;
+color: black;
+padding: 0px;
+margin: 0px;
+line-height: 1.6;
+background-repeat: repeat-x;
+background-size: 100%;
+background-color:#d6d6d6;
+}
+
+#header {
+	background:#FFF;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.logo {
+	float: left;
+	margin: 20px 0;
+}
+
+.nav {
+	float: right;
+	margin: 22px 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.wraper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.nav li {
+	float: left;
+	display: block;
+	margin-left: 20px;
+}
+
+a {
+	font-style: inherit;
+	font-weight: inherit;
+	text-decoration: inherit;
+	color: inherit;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+#main {
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-image: url("../img/01.png");*/
+	background-color: #F1F1F1;
+	margin-top: 70px;
+	padding: 50px 0;
+}
+
+.description {
+	padding-left: 20px;
+	width: 40%;
+	float: left;
+	height: 100%;
+	background-color: red;
+}
+
+.thumbnail {
+	width: 60%;
+	float: left;
+	height: 100%;
+	background-color: green;
+}
+
+.item {
+	height: 600px;
+	background-color: #FFF;
+}
+
+#work {
+	height: 200px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-image: url("../img/01.png");*/
+	background-color: #FFF;
+	padding: 10px 0;
+}
+
+.welcome {
+	text-align: center;
+}
+
+
+.bio {
+	text-align: center;
+	position: relative;
+}
+
+
+
+.button01 {
+	font-family: inherit;
+	font-weight: bold;
+	border: 2px solid #000;
+	background: transparent;
+	padding: 10px 20px;
+}
+
+.button01:hover{
+	background-color: #000;
+	border-color: #000;
+	color: #FFF;
+}
