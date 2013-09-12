@@ -4,6 +4,10 @@
 		<!--<link rel="stylesheet" href="css/bootstrap.css">-->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-scrollspy.js"></script>
+		<script type='text/javascript' src='js/jquery.scrollspy.js'></script>
+   		<script src="js/main.js"></script>
 		<style type="text/css">
 		
     </style>
@@ -12,19 +16,19 @@
 	<body>
 	<div id="header">
 	<div class="wraper clearfix">
-		<img class="logo" src="img/P_logo.png">
+		<a href="#home"><img class="logo" src="img/P_logo.png" alt="Home"></a>
 		<ul class="nav clearfix">
-				<li class="normal"><a href="#">Bio</a></li>
-				<li class="normal"><a href="#">Work</a></li>
-				<li class="normal"><a href="#">Contact</a></li>
+				<li class="normal"><a href="#bio">Bio</a></li>
+				<li class="normal"><a href="#work">Work</a></li>
+				<li class="normal"><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
 	</div>
 
 	<div id="main">
 		<div class="wraper welcome">
-		<h1>I am Sergii Popovych, a Los Angeles based designer who loves creating efficient user-interfaces and innovative solutions for web and mobile products. Check out my portfolio and enjoy.</h1>
-		<button class="button01">See My Work</button>
+		<h1 class="welcome_text">I am Sergii Popovych, a Los Angeles based designer who loves creating efficient user-interfaces and innovative solutions for web and mobile products. Check out my portfolio and enjoy.</h1>
+		<button href="#work" class="button01">See My Work</button>
 		</div>
     </div>
     	</div>
@@ -32,11 +36,12 @@
 		<h1>Works</h1>
 		</div>
 
-
-	<div class="item clearfix">
+	<div class="outer">
+	<div class="item" id="item01">
 		<div class="thumbnail">
-		<p>Bla-bla
-			</p>
+			<div class="inner">
+			<img src="img/work/bing_01.png" class="thumbimage" alt="Bing Media" >
+			</div>
 		</div>
 		<div class="description">
 			<h1>
@@ -44,11 +49,32 @@
 			</h1>
 			<p class="description_text">
 			For Bing, I created a new interactive application for multimedia search from scratch. The goal was to create an interface for the iOS platform using metro-style principles while retaining consistency throughout all devices and applications.
+			<br><br><a href="#">See Project</a>
 			</p>
 		</div>
 	</div>
+	</div>
 
-    	<div class="wraper bio">
+	<div class="outer">
+	<div class="item" id="item02">
+		<div class="description">
+			<h1>
+			Popover Poker
+			</h1>
+			<p class="description_text">
+			For Popover, I designed a poker experience consistent with a five-diamond resort look and feel. With evolving demand for multitudes of intricate details and features across the game from product owners, this project, now “Playsino Poker,” provides a good example of how I can create a rich front-end experience that is ever evolving, yet with precision and style. 
+			<br><br><a href="#">See Project</a>
+			</p>
+		</div>
+		<div class="thumbnail">
+			<div class="inner">
+			<img src="img/work/bing_02.png" class="thumbimage" alt="Bing Media" >
+			</div>
+		</div>
+	</div>
+	</div>
+
+    	<div class="wraper bio" id="bio">
 		<h2>Bio</h2>
 		<p>
 		Sergii Popovych. A UX & product designer. I am based in Los Angeles. However, I design for clients globally.
